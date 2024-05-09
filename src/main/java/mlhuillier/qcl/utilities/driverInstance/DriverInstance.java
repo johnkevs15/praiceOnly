@@ -256,7 +256,7 @@ public class DriverInstance extends Drivertools {
 				options.addArguments("--disable-gpu");
 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 				System.setProperty("webdriver.chrome.whitelistedIps", "");
-				options.setHeadless(true);// = new ChromeOptions().setHeadless(true);
+				options.setHeadless(false);// = new ChromeOptions().setHeadless(true);
 
 				if(!osName.contains("mac") && osName.contains("linux")){
 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
